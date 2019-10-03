@@ -14,7 +14,32 @@ class NewsCreator {
     
     func getArticles (){
         Alamofire.request("https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=deec1dac677344dfa61ae61c4c103975").responseJSON { (response) in
-            print(response)
+            if let json = response.result.value as? [String : Any] {
+                if let jsonArticles = json["articles"] as? [[String : Any]] {
+                    var articles = [Article]()
+                    for jsonArticle in jsonArticles {
+                        guard let title = jsonArticle["title"] as? String,
+                            let urlToImg = jsonArticle["urlToImage"] as? String,
+                            let articleUrl = jsonArticle["url"] as? String,
+                            let description = jsonArticle["description"] as? String else { continue }
+                        let article = Article()
+                        article.title = title
+                        article.urlToImg = urlToImg
+                        article.articleUrl = articleUrl
+                        article.description = description
+                        articles.append(article)
+                    }
+                }
+            }
         }
     }
+}
+
+class Article {
+    
+    var title = ""
+    var urlToImg = ""
+    var articleUrl = ""
+    var description = ""
+    var category = ""
 }
