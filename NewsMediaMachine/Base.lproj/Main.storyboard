@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="newsCell" rowHeight="350" id="lSu-YF-YM3">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="newsCell" rowHeight="350" id="lSu-YF-YM3" customClass="newsCell" customModule="NewsMediaMachine" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="350"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lSu-YF-YM3" id="cZL-x6-5GL">
@@ -64,6 +64,11 @@
                                         <constraint firstItem="tqq-kH-xVH" firstAttribute="top" secondItem="R7g-I5-sms" secondAttribute="bottom" id="zzb-Cg-7G8"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="cellImg" destination="R7g-I5-sms" id="4yI-QS-Dwi"/>
+                                    <outlet property="cellNewsCategory" destination="tqq-kH-xVH" id="aZB-k0-x8G"/>
+                                    <outlet property="cellTitle" destination="z8B-1e-9oX" id="XMR-8X-syf"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
