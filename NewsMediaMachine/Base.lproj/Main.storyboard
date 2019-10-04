@@ -11,59 +11,70 @@
         <scene sceneID="6Rp-fC-OPS">
             <objects>
                 <tableViewController id="kL8-6r-qIx" customClass="ArticlesTableVC" customModule="NewsMediaMachine" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="RNP-V1-4UD">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="RNP-V1-4UD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.25098039220000001" green="0.45098039220000002" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="newsCell" rowHeight="350" id="lSu-YF-YM3" customClass="newsCell" customModule="NewsMediaMachine" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="350"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="newsCell" rowHeight="360" id="lSu-YF-YM3" customClass="newsCell" customModule="NewsMediaMachine" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="360"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lSu-YF-YM3" id="cZL-x6-5GL">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="350"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="360"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="news type sorted" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="z8B-1e-9oX">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
-                                            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="25"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="35.5"/>
+                                            <color key="backgroundColor" red="0.20784313725490194" green="0.23137254901960785" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="18"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="R7g-I5-sms">
-                                            <rect key="frame" x="0.0" y="30" width="414" height="247"/>
+                                            <rect key="frame" x="0.0" y="35.5" width="414" height="266.5"/>
+                                            <color key="backgroundColor" red="0.20784313730000001" green="0.23137254900000001" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="247" id="xDj-Y0-w6e"/>
+                                                <constraint firstAttribute="width" constant="414" id="fwr-mo-U2f"/>
+                                                <constraint firstAttribute="height" constant="266.5" id="xDj-Y0-w6e"/>
                                             </constraints>
                                         </imageView>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RE5-7o-IPY">
-                                            <rect key="frame" x="0.0" y="307" width="414" height="43"/>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Cn-ok-6a2">
+                                            <rect key="frame" x="0.0" y="336" width="414" height="24"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="414" id="OqK-aq-eid"/>
+                                                <constraint firstAttribute="height" constant="24" id="qlu-J9-Alt"/>
+                                            </constraints>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="news type sorted" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqq-kH-xVH">
-                                            <rect key="frame" x="0.0" y="277" width="414" height="30"/>
-                                            <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="25"/>
+                                            <rect key="frame" x="0.0" y="302" width="414" height="24"/>
+                                            <color key="backgroundColor" red="0.20784313730000001" green="0.23137254900000001" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="414" id="566-TO-cTL"/>
+                                                <constraint firstAttribute="height" constant="24" id="bKO-61-xQZ"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="20"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="9Cn-ok-6a2" secondAttribute="bottom" id="43V-bB-2tX"/>
                                         <constraint firstAttribute="trailing" secondItem="tqq-kH-xVH" secondAttribute="trailing" id="7kc-9y-J86"/>
-                                        <constraint firstItem="RE5-7o-IPY" firstAttribute="leading" secondItem="cZL-x6-5GL" secondAttribute="leading" id="E5w-Qi-S6t"/>
-                                        <constraint firstAttribute="trailing" secondItem="RE5-7o-IPY" secondAttribute="trailing" id="Pte-zf-j8X"/>
+                                        <constraint firstItem="9Cn-ok-6a2" firstAttribute="top" secondItem="tqq-kH-xVH" secondAttribute="bottom" constant="10" id="EDB-Vw-4wF"/>
+                                        <constraint firstItem="9Cn-ok-6a2" firstAttribute="leading" secondItem="cZL-x6-5GL" secondAttribute="leading" id="FZ9-XJ-gTk"/>
+                                        <constraint firstAttribute="trailing" secondItem="9Cn-ok-6a2" secondAttribute="trailing" id="O7y-4t-Ihv"/>
                                         <constraint firstItem="R7g-I5-sms" firstAttribute="leading" secondItem="cZL-x6-5GL" secondAttribute="leading" id="R9B-T8-XHp"/>
                                         <constraint firstItem="tqq-kH-xVH" firstAttribute="leading" secondItem="cZL-x6-5GL" secondAttribute="leading" id="UH2-XD-8py"/>
                                         <constraint firstAttribute="trailing" secondItem="R7g-I5-sms" secondAttribute="trailing" id="Upg-PZ-vst"/>
-                                        <constraint firstAttribute="bottom" secondItem="RE5-7o-IPY" secondAttribute="bottom" id="fMq-xF-gE6"/>
                                         <constraint firstItem="z8B-1e-9oX" firstAttribute="leading" secondItem="cZL-x6-5GL" secondAttribute="leading" id="kO3-0a-HRX"/>
-                                        <constraint firstItem="RE5-7o-IPY" firstAttribute="top" secondItem="tqq-kH-xVH" secondAttribute="bottom" id="kXT-tu-ujn"/>
                                         <constraint firstItem="z8B-1e-9oX" firstAttribute="top" secondItem="cZL-x6-5GL" secondAttribute="top" id="lKP-0v-c29"/>
                                         <constraint firstAttribute="trailing" secondItem="z8B-1e-9oX" secondAttribute="trailing" id="vPW-tA-oMe"/>
                                         <constraint firstItem="R7g-I5-sms" firstAttribute="top" secondItem="z8B-1e-9oX" secondAttribute="bottom" id="yvb-iT-6uG"/>
                                         <constraint firstItem="tqq-kH-xVH" firstAttribute="top" secondItem="R7g-I5-sms" secondAttribute="bottom" id="zzb-Cg-7G8"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.25098039220000001" green="0.45098039220000002" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="cellImg" destination="R7g-I5-sms" id="4yI-QS-Dwi"/>
                                     <outlet property="cellNewsCategory" destination="tqq-kH-xVH" id="aZB-k0-x8G"/>
@@ -77,7 +88,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="NMM" id="rwX-P5-SQm">
-                        <barButtonItem key="rightBarButtonItem" image="gear" catalog="system" id="dAe-84-CtB"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="gear" catalog="system" id="dAe-84-CtB">
+                            <connections>
+                                <action selector="reloadTapped:" destination="kL8-6r-qIx" id="4Xl-OZ-wTy"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <segue destination="ntU-De-o81" kind="show" identifier="goToWebView" id="dPC-Rm-khX"/>
@@ -87,7 +102,7 @@
             </objects>
             <point key="canvasLocation" x="433.33333333333337" y="61.607142857142854"/>
         </scene>
-        <!--Article WebVC-->
+        <!--Title-->
         <scene sceneID="p8c-kb-3Kc">
             <objects>
                 <viewController id="ntU-De-o81" customClass="ArticleWebVC" customModule="NewsMediaMachine" customModuleProvider="target" sceneMemberID="viewController">
@@ -113,7 +128,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hN2-Z1-oZl"/>
                     </view>
-                    <navigationItem key="navigationItem" id="fcM-2k-uQv"/>
+                    <navigationItem key="navigationItem" title="Title" id="pIq-Zn-yRi"/>
+                    <connections>
+                        <outlet property="webView" destination="jui-kL-z8t" id="W1E-gc-PyQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7e9-Ug-POw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -127,7 +145,7 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" systemColor="systemGroupedBackgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="barTintColor" systemColor="systemGreenColor" red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.25098039215686274" green="0.45098039215686275" blue="0.61960784313725492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="40"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
